@@ -5,10 +5,7 @@ import React, {useState} from "react"
 
 function LikeButton ( {upvotes, downvotes} ) {
 
-   
-
     const [upLikes, setUpLikes] = useState(0)
-
 
     function increment () {
         setUpLikes((upLikes) => upLikes + 1)
@@ -21,10 +18,10 @@ function LikeButton ( {upvotes, downvotes} ) {
     }
 
    return ( 
-   <div>
+     <div>
             <button onClick={increment}>like button {upLikes + upvotes} </button>
-            <button onClick={increment2}>disliked button {downLikes + downvotes}  </button>
-    </div> 
+            <button onClick={increment2}>dislike button {downLikes + downvotes}  </button>
+     </div> 
    )
 }
 

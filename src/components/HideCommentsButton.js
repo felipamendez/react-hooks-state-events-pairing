@@ -1,9 +1,9 @@
 import React, {useState} from "react"
-// import Comments from "./Comments"
+
 
 function HideCommentsButton ( {comments} ) {
 
-    const [isHidden, setIsHidden ] = useState(false)
+    const [ isHidden, setIsHidden ] = useState(false)
 
     const hidden = isHidden ? "none" : "block"
 
@@ -12,7 +12,7 @@ function HideCommentsButton ( {comments} ) {
     }
 
     return(
-        <>
+     <>
         <button onClick={handleHide}>HideComments</button>
          <h1>Comments</h1>
 
@@ -27,12 +27,8 @@ function HideCommentsButton ( {comments} ) {
             })
             }
         </ul>
-        </>
+     </>
     )
-    
-    //style needs to move to comments 
 }
-
-
 
 export { HideCommentsButton }

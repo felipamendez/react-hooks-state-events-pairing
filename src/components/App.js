@@ -1,5 +1,4 @@
 import video from "../data/video.js";
-
 import React from "react"
 import VideoDetails from "./VideoDetails"
 
@@ -21,6 +20,7 @@ function App() {
         title="Thinking in React"
       />
       </div>
+
       <VideoDetails 
       title={video.title} 
       views={video.views} 
